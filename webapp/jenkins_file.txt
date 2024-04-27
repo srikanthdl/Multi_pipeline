@@ -1,10 +1,10 @@
 node('master') 
 {
-    stage('Continuous Download_loans') 
+    stage('Continuous Download_Demo') 
 	{
     git 'https://github.com/srikanthdl/webapp.git'
 	}
-    stage('Continuous Build_loans') 
+    stage('Continuous Build_Demo') 
 	{
     sh label: '', script: 'mvn package'
 	}
